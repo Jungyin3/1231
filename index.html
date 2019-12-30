@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”description” content=”张林的个人网站”>
+    <meta name=”keyword” content=”张林，个人网站，张林的个人网站“>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎访问张林的个人网站</title>
+    <style>
+        /* body{
+            margin: 0 auto;
+        } */
+        /* .headImg{
+            width: 100%;
+        } */
+        .img{
+            height: 70vh;
+            width: 60vw;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content" align="center">
+        <!-- 网页图片 -->
+        <div class="headImg">
+            <img class="img" src="./head.jpg" alt="可爱的站长头像">
+        </div>
+        <!-- 文字描述 -->
+        <div class="textDescription">
+            <p class="a1">
+                备战专升本考试！加油！
+            </p>
+            <p class="a1">
+                如果考试成功，此网站还会更新；如果失败，此网站会在我闲暇之余进行更新。
+            </p>
+            <p class="a2">
+                Life is worth living.
+            </p>
+            <p class="a3">
+                我希望父母安康，每个人都好。
+            </p>
+            <p class="a4">
+                —— 2019.12.31
+            </p>
+        </div>
+    </div>
+    <script>
+        window.onload=() => {
+            var img = document.getElementsByClassName('img');
+            if(this.screen.availWidth <= 414){
+                // img.style.width = '40vw';
+                //img[0].style.cssText="width:10vw";
+                img[0].style.cssText="height:50vw";
+                //img[0].width = '200px';
+                console.log(img[0].height);
+                //console.log('hhhh');
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>
